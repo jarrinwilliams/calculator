@@ -10,11 +10,14 @@ body {
 }
 .calculator {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: .5rem;
     height: 80rem;
     width: 80rem;
     border: solid black .5rem;
+    flex-wrap: wrap;
+    margin: 1;
 }
 .calcBtns {
     display: flex;
@@ -40,8 +43,9 @@ body {
 }
 .eqBtn {
     height: 10rem;
-    width: 74.4rem;
+    width: 75rem;
     font-size: 2rem;
+    margin: 1rem;
 }
 .calcDisplay {
     background-color: #a3a78d;

@@ -1,6 +1,2 @@
-const buttons = document.querySelectorAll('button');
-buttons.forEach((button) => {
-    button.addEventListener('click', function(e) {
-        console.log(e);
-    })
-})
+const numBtn = document.querySelector('numBtn')
+console.log(numBtn)
