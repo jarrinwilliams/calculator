@@ -17,21 +17,13 @@ body {
     width: 80rem;
     border: solid black .5rem;
     flex-wrap: wrap;
-    margin: 1;
-}
-.calcBtns {
-    display: flex;
-    flex-wrap: wrap;
-    width: 75rem;
-    gap: .5rem;
-    margin: 1rem;
 }
 .numBtn {
     width: 18.2rem;
     height: 12.5rem;
     font-size: 2rem;
 }
-.opBtn {
+.opBtn, .decBtn {
     width: 18.2rem;
     height: 12.5rem;
     font-size: 2rem;
@@ -42,14 +34,19 @@ body {
     font-size: 2rem;
 }
 .eqBtn {
-    height: 10rem;
+    height: 8rem;
     width: 75rem;
     font-size: 2rem;
-    margin: 1rem;
+    margin-bottom: 2rem; 
 }
 .calcDisplay {
     background-color: #a3a78d;
     width: 75rem;
     height: 10rem;
-    margin: 2rem auto;
+    text-align: right;
+    margin-top: 2rem;
+}
+.displayChar {
+    font-size: 8rem;
+    margin: .5rem;
 }
