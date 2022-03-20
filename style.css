@@ -10,43 +10,99 @@ body {
 }
 .calculator {
     display: flex;
+    border-radius: 1rem;
     align-items: center;
     justify-content: center;
-    gap: .5rem;
+    gap: 1rem;
     height: 80rem;
     width: 80rem;
     border: solid black .5rem;
     flex-wrap: wrap;
+    background-color: red;
 }
 .numBtn {
-    width: 18.2rem;
-    height: 12.5rem;
+    width: 12rem;
+    height: 10rem;
     font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 1.6rem;
+    font-family: sans-serif;
+    border: solid white .3rem;
+    background: blue;
+    color: white;
+    transition: color, background .5s;
 }
-.opBtn, .decBtn {
-    width: 18.2rem;
-    height: 12.5rem;
+.numBtn:hover {
+    background: lightblue;
+}
+.opBtn {
+    width: 12rem;
+    height: 10rem;
     font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 1.6rem;
+    font-family: sans-serif;
+    color: white;
+    background-color: red;
+    border: solid white .3rem;
+    transition: color, background .5s;
+}
+.opBtn:hover {
+    color: red;
+    background: white;
 }
 .clearBtn {
-    width: 18.2rem;
-    height: 12.5rem;
+    width: 12rem;
+    height: 10rem;
     font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 1.6rem;
+    font-family: sans-serif;
+    border: solid white .3rem;
+    background-color: black;
+    color: white;
+    transition: color, background .5s;
+}
+.clearBtn:hover {
+    background: white;
+    color: black;
 }
 .eqBtn {
     height: 8rem;
-    width: 75rem;
+    width: 60rem;
     font-size: 2rem;
     margin-bottom: 2rem; 
+    border-radius: 3rem;
+    cursor: pointer;
+    font-family: sans-serif;
+    border: solid white .3rem;
+    color: white;
+    background-color: orange;
+    transition: background .5s;
+}
+.eqBtn:hover {
+    background: #ffcc99;
 }
 .calcDisplay {
     background-color: #a3a78d;
-    width: 75rem;
-    height: 10rem;
+    width: 70rem;
+    height: 13rem;
     text-align: right;
-    margin-top: 2rem;
+    margin: 2rem;
+    border: solid black .30rem;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    overflow: scroll;
+    text-overflow: ellipsis;
 }
 .displayChar {
     font-size: 8rem;
-    margin: .5rem;
+    margin: 1rem;
+}
+.miniDisplay {
+    font-size: 2rem;
+    margin: 1rem;
 }
